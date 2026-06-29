@@ -1,4 +1,4 @@
-# In this we eill discuss the sytax of yaml file by creating a workflow
+# In this we will discuss the sytax of yaml file by creating a workflow
 
 name: first file       # name of the workflow
 
@@ -7,6 +7,6 @@ on:                    # on tells when workflow should run
 jobs:                   # job tells what the worlflow should do , can be more then one job
   say-hello:            # we created the job name, give it name 
     runs-on: ubuntu-latest        # on what machine this job will run . github action will create a ephermal ubuntu container to run this job and then delete
-    steps:                        # the job/ephermal container (that runs on ubuntu) has steps to execute
+    steps:                         # the job/ephermal container (that runs on ubuntu) has steps to execute
       - name: say hello               # we named out first step which we wana execute 
         run: echo "Hello Everyone"     # in run block we can write basic shell commands 
